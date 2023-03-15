@@ -7,11 +7,11 @@ public class Cane extends Animal{
 
     @Override
     public void verso() {
-
+        System.out.println("Bau! Bau!");
     }
 
     @Override
     public void mangia() {
-
+        System.out.println("Ero carnivoro, ma adesso anche la pasta asciutta.");
     }
 }
