@@ -55,12 +55,25 @@ public class Farm {
             System.out.println("****");
             animal.getName();
             System.out.println("Tipo: " + animal.getClass().getSimpleName());
-
             animal.dormi();
             animal.mangia();
             animal.verso();
+            if (animal instanceof IVolante) {
+                faiVolare((IVolante) animal);
+            }
+            if (animal instanceof INuotante) {
+                faiNuotare((INuotante) animal);
+            }
         }
 
         scanner.close();
+    }
+
+    static void faiNuotare(INuotante animal) {
+        animal.nuota();
+    }
+
+    static void faiVolare(IVolante animal) {
+        animal.vola();
     }
 }

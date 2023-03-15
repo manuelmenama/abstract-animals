@@ -1,6 +1,6 @@
 package org.lessons.java.farm;
 
-public class Delfino extends Animal{
+public class Delfino extends Animal implements INuotante{
 
     public Delfino(String name) {
         super(name);
@@ -14,5 +14,10 @@ public class Delfino extends Animal{
     @Override
     public void mangia() {
         System.out.println("Cosa mangio? PESCI!");
+    }
+
+    @Override
+    public void nuota() {
+        System.out.println("Sto nuotando!!!");
     }
 }

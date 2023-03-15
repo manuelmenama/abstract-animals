@@ -1,6 +1,6 @@
 package org.lessons.java.farm;
 
-public class Passerotto extends Animal{
+public class Passerotto extends Animal implements IVolante{
 
     public Passerotto(String name) {
         super(name);
@@ -14,5 +14,10 @@ public class Passerotto extends Animal{
     @Override
     public void mangia() {
         System.out.println("Mangio tendezialmente invertebrati, vuoi provare?");
+    }
+
+    @Override
+    public void vola() {
+        System.out.println("Voloooo!");
     }
 }

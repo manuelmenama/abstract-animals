@@ -12,6 +12,6 @@ public class Cane extends Animal{
 
     @Override
     public void mangia() {
-        System.out.println("Ero carnivoro, ma adesso anche la pasta asciutta.");
+        System.out.println("Ero carnivoro, ma adesso mangio anche la pasta asciutta.");
     }
 }

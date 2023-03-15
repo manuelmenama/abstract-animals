@@ -1,6 +1,6 @@
 package org.lessons.java.farm;
 
-public class Aquila extends Animal {
+public class Aquila extends Animal implements IVolante {
 
     public Aquila(String name) {
         super(name);
@@ -15,4 +15,10 @@ public class Aquila extends Animal {
     public void mangia() {
         System.out.println("Gradisco piccoli animali, facili da arpionare con le mie zampe!");
     }
+
+    @Override
+    public void vola() {
+        System.out.println("Voloooo!");
+    }
 }
+
