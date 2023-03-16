@@ -54,7 +54,7 @@ public class Farm {
         for (Animal animal : animals){
             System.out.println("****");
             System.out.println("Ciao sono " + animal.getName());
-            System.out.println("Tipo: " + animal.getClass().getSimpleName());
+            System.out.println("Sono un " + animal.getClass().getSimpleName().toLowerCase());
             animal.dormi();
             animal.mangia();
             animal.verso();
